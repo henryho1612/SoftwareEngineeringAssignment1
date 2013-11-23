@@ -1,5 +1,5 @@
 #surefire
-#Sat Nov 23 14:25:40 ICT 2013
+#Sat Nov 23 19:39:59 ICT 2013
 testClassesDirectory=/Volumes/Data/apple/Dropbox/RMIT/Software Architecture-DesignImplementation/Assignment/Assignment1_HoXuanHieu_s3357671_LuongHongNgoc_s3425477_LeNguyenHuan_s3408665/LocalServer/target/test-classes
 classPathUrl.4=/Volumes/Data/apple/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
 forkMode=once
