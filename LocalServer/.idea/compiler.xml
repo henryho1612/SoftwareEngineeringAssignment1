@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="LocalServer" />
         <module name="Tute1-HelloWorld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="LocalServer" target="1.7" />
       <module name="Tute1-HelloWorld" target="1.7" />
     </bytecodeTargetLevel>
   </component>

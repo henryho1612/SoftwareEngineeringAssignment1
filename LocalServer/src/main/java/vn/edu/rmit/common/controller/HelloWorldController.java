@@ -18,9 +18,8 @@ public class HelloWorldController extends AbstractController{
 
         if (request.getParameter("Data") != null)
         {
-//            System.out.println(request.getParameter("Data"));
             FileHandler handler = new FileHandler(request.getParameter("Data"));
-            handler.eraseSpecialCharacter();
+            handler.insertValueFromJson();
         }
 
         return model;
