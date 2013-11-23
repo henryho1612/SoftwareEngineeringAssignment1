@@ -45,11 +45,11 @@ public class HttpConnection {
             //System.out.println(post.getURI());
 
             //Adding value to a parameter
+            post.addHeader("Accept", "text/xml");
             postParameters = new ArrayList<>();
             postParameters.add(new BasicNameValuePair("Test", data.toString()));
             post.setEntity(new UrlEncodedFormEntity(postParameters));
-            post.addHeader("Content-Type", "application/json");
-            post.addHeader("Accept", "application/json");
+            
 
 
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
@@ -58,14 +58,21 @@ public class HttpConnection {
             System.out.println("responseBody : " + responseBody);
 
             // <editor-fold defaultstate="collapsed" desc=" ${Testing Code} ">
+//            StringEntity entity = new StringEntity(
+//                    "<DocSearch><searchString>*.pdf</searchString>"
+//                    + "<userName>Sudhakar KV</userName></DocSearch>",
+//                    "text/xml", "ISO-8859-1");
+//            post.addHeader("Accept", "text/xml");
+//            post.setEntity(entity);
+//            post.addHeader("Content-Type", "text/xml");
             //post.setEntity(new StringEntity(data));
             //HttpResponse response = conn.execute(post);
-            //StringEntity entity = new StringEntity(
-                    //"<DocSearch><searchString>*.pdf</searchString>"
-                    //+ "<userName>Sudhakar KV</userName></DocSearch>",
-                    //"text/xml", "ISO-8859-1");
-            //post.addHeader("Accept", "text/xml");
-            //post.setEntity(entity);
+//            StringEntity entity = new StringEntity(
+//                    "<DocSearch><searchString>*.pdf</searchString>"
+//                    + "<userName>Sudhakar KV</userName></DocSearch>",
+//                    "text/xml", "ISO-8859-1");
+//            post.addHeader("Accept", "text/xml");
+//            post.setEntity(entity);
             
             //StatusLine status = response.getStatusLine();
             //System.out.println(status.getStatusCode());
