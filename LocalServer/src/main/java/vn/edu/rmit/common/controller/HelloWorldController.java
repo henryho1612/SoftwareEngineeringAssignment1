@@ -16,11 +16,12 @@ public class HelloWorldController extends AbstractController{
         ModelAndView model = new ModelAndView("HelloWorldPage");
         model.addObject("msg", "hello world");
 
-        System.out.println(request.getParameter("Test"));
-
-//        FileHandler handler = new FileHandler(request.getParameter("Data"));
-//        handler.eraseSpecialCharacter();
-
+        if (request.getParameter("Data") != null)
+        {
+//            System.out.println(request.getParameter("Data"));
+            FileHandler handler = new FileHandler(request.getParameter("Data"));
+            handler.eraseSpecialCharacter();
+        }
 
         return model;
     }

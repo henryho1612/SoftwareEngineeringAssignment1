@@ -1,68 +1,30 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1265
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-
-\f0\fs24 \cf0 [\
-\{\
-	\'93name\'94 : \'93Nguyen Van A\'94,\
-	\'93DOB\'94 : \'9331/12/2013\'94,\
-	\'93Gender\'94 : \'93Male\'94,\
-	\'93Address\'94 : \'9321 Nguyen Lam\'94,\
-	\'93DateOfVisit\'94 : \'9321/12/2013\'94,\
-	\'93ICDCode\'94 : \'93001\'94,\
-	\'93AdditionalICD code\'94 : \'93004\'94,\
-	\'93DateOfDischarge\'94 : \'9325/12/2013\'94,\
-	\'93Outcome\'94 : \'93Cured\'94,\
-	\'93TypeOfTreatment\'94 : \'93Died\'94,\
-	\'93ListOfServices\'94: [\
-		\{	\'93LabTest\'94:\'93neck\'94, \
-			\'93ImageDiagnosis\'94: \'94Phimosis\'94,\
-			\'93Surgery\'94:\'94Circumsion\'94,\
-			\'94MirrorSurgery\'94:\'94Repair\'94 \},\
-		\{	\'93LabTest\'94:\'93knee\'94, \
-			\'93ImageDiagnosis\'94: \'94Religious reason\'94,\
-			\'93Surgery\'94:\'94Urethroplasty\'94,\
-			\'94MirrorSurgery\'94:\'94Chordae Correction\'94 \},\
-	],\
-	\'93ListOfDrug\'94: [\
-		\{	\'93DrugName\'94:\'93Panadol\'94, \
-			\'93Quality\'94: 30,\
-			\'93Length\'94: 10,\
-		\{	\'93DrugName\'94:\'93Phamaton\'94, \
-			\'93Quality\'94: 30,\
-			\'93Length\'94: 10, \},\
-	],\
-\},\
-\{\
-	\'93name\'94 : \'93Nguyen Thi B\'94,\
-	\'93DOB\'94 : \'9331/12/2002\'94,\
-	\'93Gender\'94 : \'93FeMale\'94,\
-	\'93Address\'94 : \'93100 Nguyen Van Linh\'94,\
-	\'93DateOfVisit\'94 : \'9312/12/2013\'94,\
-	\'93ICDCode\'94 : \'93102\'94,\
-	\'93AdditionalICD code\'94 : \'93004\'94,\
-	\'93DateOfDischarge\'94 : \'9315/12/2013\'94,\
-	\'93Outcome\'94 : \'93Decrease\'94,\
-	\'93TypeOfTreatment\'94 : \'93Decrease\'94,\
-	\'93ListOfServices\'94: [\
-		\{	\'93LabTest\'94:\'93Back\'94, \
-			\'93ImageDiagnosis\'94: \'94TightPerpuce\'94,\
-			\'93Surgery\'94:\'94Perpucal Dialation\'94,\
-			\'94MirrorSurgery\'94:\'94Repair\'94 \},\
-		\{	\'93LabTest\'94:\'93knee\'94, \
-			\'93ImageDiagnosis\'94: \'94Religious reason\'94,\
-			\'93Surgery\'94:\'94Urethroplasty\'94,\
-			\'94MirrorSurgery\'94:\'94Chordae Correction\'94 \},\
-	],\
-	\'93ListOfDrug\'94: [\
-		\{	\'93DrugName\'94:\'93Cocaine\'94, \
-			\'93Quality\'94: 10,\
-			\'93Length\'94: 3,\
-		\{	\'93DrugName\'94:\'93Opiates\'94, \
-			\'93Quality\'94: 12,\
-			\'93Length\'94: 3, \},\
-	],\
-\}\
-]}
+{
+	"Name" : "Nguyen Van A",
+	"DOB" : "31/12/2013",
+	"Gender" : "Male",
+	"Address" : "21 Nguyen Lam",
+	"DateOfVisit" : "21/12/2013",
+	"ICDCode" : "001",
+	"AdditionalICD code" : "004",
+	"DateOfDischarge" : "25/12/2013",
+	"Outcome" : "Cured",
+	"TypeOfTreatment" : "Died",
+	"ListOfServices": [
+		{	"LabTest":"neck", 
+			"ImageDiagnosis": "Phimosis",
+			"Surgery":"Circumsion",
+			"MirrorSurgery":"Repair" },
+		{	"LabTest":"knee", 
+			"ImageDiagnosis": "Religious reason",
+			"Surgery":"Urethroplasty",
+			"MirrorSurgery":"Chordae Correction" },
+	],
+	"ListOfDrug": [
+		{	"DrugName":"Panadol", 
+			"Quality": 30,
+			"Length": 10 },
+		{	"DrugName":"Phamaton", 
+			"Quality": 30,
+			"Length": 10 },
+	]
+}

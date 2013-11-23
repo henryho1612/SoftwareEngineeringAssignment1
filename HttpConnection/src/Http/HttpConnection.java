@@ -47,10 +47,8 @@ public class HttpConnection {
             //Adding value to a parameter
             post.addHeader("Accept", "text/xml");
             postParameters = new ArrayList<>();
-            postParameters.add(new BasicNameValuePair("Test", data.toString()));
+            postParameters.add(new BasicNameValuePair("Data", data.toString()));
             post.setEntity(new UrlEncodedFormEntity(postParameters));
-            
-
 
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
             String responseBody = conn.execute(post, responseHandler);
