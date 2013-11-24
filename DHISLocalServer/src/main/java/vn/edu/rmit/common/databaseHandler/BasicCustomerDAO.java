@@ -16,6 +16,8 @@ import java.sql.SQLException;
  * Time: 11:32 AM
  * To change this template use File | Settings | File Templates.
  */
+//This is inspired and extended from the article below
+//source: http://www.mkyong.com/spring/maven-spring-jdbc-example/
 public class BasicCustomerDAO implements CustomerDAO {
 
     private DataSource dataSource;
@@ -24,7 +26,6 @@ public class BasicCustomerDAO implements CustomerDAO {
         this.dataSource = dataSource;
     }
 
-    //source: http://www.mkyong.com/spring/maven-spring-jdbc-example/
     public void insert(Customer customer)
     {
         String insertCommand = "INSERT INTO Customer " +

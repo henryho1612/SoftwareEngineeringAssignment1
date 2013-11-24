@@ -1,7 +1,6 @@
 package vn.edu.rmit.common.databaseHandler;
 
 import vn.edu.rmit.common.databaseHandlerInterface.DrugDAO;
-import vn.edu.rmit.common.model.Customer;
 import vn.edu.rmit.common.model.Drug;
 
 import javax.sql.DataSource;

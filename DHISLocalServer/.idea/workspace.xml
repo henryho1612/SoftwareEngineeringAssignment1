@@ -6,17 +6,17 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/web.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385272631902" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385272874225" ignored="false" />
-    <file path="/LocalServerController.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385273366977" ignored="false" />
-    <file path="/FileHandler.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385299000972" ignored="false" />
+    <file path="/LocalServerController.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385310860184" ignored="false" />
+    <file path="/FileHandler.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385311090726" ignored="false" />
     <file path="/Service.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282751206" ignored="false" />
     <file path="/Drug.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282721921" ignored="false" />
     <file path="/Customer.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282622169" ignored="false" />
     <file path="/DrugDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297031289" ignored="false" />
     <file path="/ServiceDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297024665" ignored="false" />
     <file path="/fragment.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385288034798" ignored="false" />
-    <file path="/BasicCustomerDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297097461" ignored="false" />
+    <file path="/BasicCustomerDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385310944655" ignored="false" />
     <file path="/Spring-Customer.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297748946" ignored="false" />
-    <file path="/Spring-Datasource.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385292296147" ignored="false" />
+    <file path="/Spring-Datasource.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385311045744" ignored="false" />
     <file path="/BasicDrugDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297092647" ignored="false" />
     <file path="/BasicServiceDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297052147" ignored="false" />
     <file path="/CustomerDAO.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385297035338" ignored="false" />
@@ -87,10 +87,17 @@
       <file leaf-file-name="FileHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="34" selection-start="6175" selection-end="6175" vertical-scroll-proportion="-2.24">
+            <state line="59" column="30" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#dateChecker#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#setCustomer#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#insertDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#insertServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#insertCustomerServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#insertCustomerDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#selectDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#selectServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#selectCustomerInDatabase#0;class#FileHandler#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -99,54 +106,52 @@
       <file leaf-file-name="Spring-Datasource.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/database/Spring-Datasource.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="53" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+            <state line="12" column="52" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spring-Module.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Spring-Module.xml">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="8" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spring-Customer.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/customer/Spring-Customer.xml">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDrugDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerDrugDAO.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="60" selection-start="291" selection-end="338" vertical-scroll-proportion="0.0">
+            <state line="12" column="41" selection-start="563" selection-end="563" vertical-scroll-proportion="0.21704394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicCustomerDrugDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDrugDAO.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="52" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicCustomerServiceDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerServiceDAO.java">
+      <file leaf-file-name="BasicCustomerDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="52" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,43 +163,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#getCustomers#0;class#Customer#0" expanded="false" />
-                <element signature="method#getName#0;class#Customer#0" expanded="false" />
-                <element signature="method#getDob#0;class#Customer#0" expanded="false" />
-                <element signature="method#getGender#0;class#Customer#0" expanded="false" />
-                <element signature="method#getAddress#0;class#Customer#0" expanded="false" />
-                <element signature="method#getVisitedDay#0;class#Customer#0" expanded="false" />
-                <element signature="method#getiCDCode#0;class#Customer#0" expanded="false" />
-                <element signature="method#getAdditionalICDCode#0;class#Customer#0" expanded="false" />
-                <element signature="method#getDateOfDischarge#0;class#Customer#0" expanded="false" />
-                <element signature="method#getOutcome#0;class#Customer#0" expanded="false" />
-                <element signature="method#getTypeOfTreatment#0;class#Customer#0" expanded="false" />
-                <element signature="method#getServices#0;class#Customer#0" expanded="false" />
-                <element signature="method#getDrugs#0;class#Customer#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicCustomerDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
+      <file leaf-file-name="Drug.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="31" selection-start="776" selection-end="2005" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicDrugDAO.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicDrugDAO.java">
+      <file leaf-file-name="Service.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="370" selection-end="370" vertical-scroll-proportion="0.37371662">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,22 +196,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/Spring-Module.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/database/Spring-Datasource.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/DrugDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/ServiceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/DrugDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicDrugDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicServiceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerDrugDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerServiceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/customer/Spring-Customer.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDrugDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerServiceDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/controller/LocalServerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicDrugDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database/Spring-Datasource.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -337,6 +324,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DHISLocalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DHISLocalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,14 +591,14 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settings.project.maven.runner" />
-    <property name="FullScreen" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -628,19 +645,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -666,6 +670,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -735,13 +752,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33042395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -805,113 +822,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicServiceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="42" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="286" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/CustomerServiceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/DrugDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandlerInterface/ServiceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerServiceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#getCustomers#0;class#Customer#0" expanded="false" />
-            <element signature="method#getName#0;class#Customer#0" expanded="false" />
-            <element signature="method#getDob#0;class#Customer#0" expanded="false" />
-            <element signature="method#getGender#0;class#Customer#0" expanded="false" />
-            <element signature="method#getAddress#0;class#Customer#0" expanded="false" />
-            <element signature="method#getVisitedDay#0;class#Customer#0" expanded="false" />
-            <element signature="method#getiCDCode#0;class#Customer#0" expanded="false" />
-            <element signature="method#getAdditionalICDCode#0;class#Customer#0" expanded="false" />
-            <element signature="method#getDateOfDischarge#0;class#Customer#0" expanded="false" />
-            <element signature="method#getOutcome#0;class#Customer#0" expanded="false" />
-            <element signature="method#getTypeOfTreatment#0;class#Customer#0" expanded="false" />
-            <element signature="method#getServices#0;class#Customer#0" expanded="false" />
-            <element signature="method#getDrugs#0;class#Customer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="31" selection-start="776" selection-end="2005" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="34" selection-start="6175" selection-end="6175" vertical-scroll-proportion="-2.24">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#dateChecker#0;class#FileHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database/Spring-Datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="53" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Spring-Module.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/customer/Spring-Customer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="32" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0">
@@ -926,21 +836,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDrugDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicDrugDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+        <state line="2" column="59" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerServiceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="52" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicDrugDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDrugDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="370" selection-end="370" vertical-scroll-proportion="0.37371662">
+        <state line="20" column="25" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/controller/LocalServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/Spring-Datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="52" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="30" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#dateChecker#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#setCustomer#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#insertDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#insertServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#insertCustomerServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#insertCustomerDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#selectDrugInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#selectServiceInDatabase#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#selectCustomerInDatabase#0;class#FileHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="563" selection-end="563" vertical-scroll-proportion="0.21704394">
+          <folding />
         </state>
       </provider>
     </entry>

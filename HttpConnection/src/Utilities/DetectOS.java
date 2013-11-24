@@ -6,6 +6,7 @@ package Utilities;
  */
 public class DetectOS {
 
+    //Source http://www.mkyong.com/java/how-to-detect-os-in-java-systemgetpropertyosname/
     private static final String OS = System.getProperty("os.name").toLowerCase();
 
     public static boolean isWindows() {

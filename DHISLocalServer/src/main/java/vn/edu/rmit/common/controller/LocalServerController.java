@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
  * Time: 1:09 PM
  * To change this template use File | Settings | File Templates.
  */
+//This is programed based on the HelloWorld Tutorial that Mr.Thanh has send
+//Source: http://www.mkyong.com/spring-mvc/spring-mvc-hello-world-example/
 public class LocalServerController extends AbstractController {
     @Override
     protected ModelAndView handleRequestInternal(HttpServletRequest request,

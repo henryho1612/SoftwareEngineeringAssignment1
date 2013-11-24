@@ -34,25 +34,25 @@ public class HttpConnection {
     public void sendPostRequest() {
 
         try {
-            //Testing
-            //URL url = new URL(urlString);
-            //System.out.println(url.getHost());
-
             //Establish a connection to send a post request
             conn = new DefaultHttpClient();
+            //Make it into a post request
             post = new HttpPost(urlString);
-            //Use for Testing
-            //System.out.println(post.getURI());
-
-            //Adding value to a parameter
+            
+            //Type of accepting file. Actually it has not been used correctly
             post.addHeader("Accept", "text/xml");
+            //Add in the parameter - content from the json file
             postParameters = new ArrayList<>();
             postParameters.add(new BasicNameValuePair("Data", data.toString()));
+            //put it in the entity of the post request
             post.setEntity(new UrlEncodedFormEntity(postParameters));
 
+            //Execute the post request.
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
             String responseBody = conn.execute(post, responseHandler);
             
+            //Received back all the content of the website and the parameter for display purpose
+            //Use for checking
             System.out.println("responseBody : " + responseBody);
 
         } catch (MalformedURLException ioe) {

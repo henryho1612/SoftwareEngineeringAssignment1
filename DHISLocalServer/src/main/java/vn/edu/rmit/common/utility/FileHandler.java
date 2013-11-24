@@ -57,6 +57,8 @@ public class FileHandler {
         }
     }
 
+    //Also inspired and extended from the article
+    //source: http://www.mkyong.com/spring/maven-spring-jdbc-example/
     private String dateChecker(String dateString)
     {
         String []dateArr = dateString.split("/");
@@ -160,7 +162,6 @@ public class FileHandler {
                 insertCustomerServiceInDatabase(customerId, serviceId);
                 serviceId--;
             }
-//            System.out.println(customer.getCustomers().get(0).toString());
         }
     }
 
