@@ -14,35 +14,33 @@ public class Service {
     String surgery;
     String mirrorSurgery;
 
-    public String getLabTest() {
-        return labTest;
+    public Service (String labTest, String imageDiagnosis, String surgery, String mirrorSurgery)
+    {
+        this.labTest = labTest;
+        this.imageDiagnosis = imageDiagnosis;
+        this.surgery = surgery;
+        this.mirrorSurgery = mirrorSurgery;
     }
 
-    public void setLabTest(String labTest) {
-        this.labTest = labTest;
+    public String getLabTest() {
+        return labTest;
     }
 
     public String getImageDiagnosis() {
         return imageDiagnosis;
     }
 
-    public void setImageDiagnosis(String imageDiagnosis) {
-        this.imageDiagnosis = imageDiagnosis;
-    }
-
     public String getSurgery() {
         return surgery;
-    }
-
-    public void setSurgery(String surgery) {
-        this.surgery = surgery;
     }
 
     public String getMirrorSurgery() {
         return mirrorSurgery;
     }
 
-    public void setMirrorSurgery(String mirrorSurgery) {
-        this.mirrorSurgery = mirrorSurgery;
+    @Override
+    public String toString()
+    {
+        return  labTest + "-" + imageDiagnosis + "-" + surgery + "-" + mirrorSurgery;
     }
 }

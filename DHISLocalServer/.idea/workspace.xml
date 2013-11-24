@@ -7,6 +7,10 @@
     <file path="/web.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385272631902" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385272874225" ignored="false" />
     <file path="/LocalServerController.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385273366977" ignored="false" />
+    <file path="/FileHandler.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385283535917" ignored="false" />
+    <file path="/Service.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282751206" ignored="false" />
+    <file path="/Drug.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282721921" ignored="false" />
+    <file path="/Customer.java" changelist="1c3daa12-3c4f-4858-b6af-4ab7b953d70f" time="1385282622169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +103,12 @@
       <file leaf-file-name="FileHandler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="66" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.60585886">
-              <folding />
+            <state line="94" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.8650138">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#dateChecker#0;class#FileHandler#0" expanded="false" />
+                <element signature="method#setCustomer#0;class#FileHandler#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +116,7 @@
       <file leaf-file-name="Service.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
+            <state line="43" column="85" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +125,7 @@
       <file leaf-file-name="Drug.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+            <state line="34" column="13" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,8 +134,22 @@
       <file leaf-file-name="Customer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="0" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="100" column="16" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#getCustomers#0;class#Customer#0" expanded="false" />
+                <element signature="method#getName#0;class#Customer#0" expanded="false" />
+                <element signature="method#getDob#0;class#Customer#0" expanded="false" />
+                <element signature="method#getGender#0;class#Customer#0" expanded="false" />
+                <element signature="method#getAddress#0;class#Customer#0" expanded="false" />
+                <element signature="method#getVisitedDay#0;class#Customer#0" expanded="false" />
+                <element signature="method#getiCDCode#0;class#Customer#0" expanded="false" />
+                <element signature="method#getAdditionalICDCode#0;class#Customer#0" expanded="false" />
+                <element signature="method#getDateOfDischarge#0;class#Customer#0" expanded="false" />
+                <element signature="method#getOutcome#0;class#Customer#0" expanded="false" />
+                <element signature="method#getTypeOfTreatment#0;class#Customer#0" expanded="false" />
+                <element signature="method#getServices#0;class#Customer#0" expanded="false" />
+                <element signature="method#getDrugs#0;class#Customer#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,13 +185,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/SuccessfulWebNotification.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/controller/LocalServerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java" />
       </list>
     </option>
@@ -250,6 +272,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DHISLocalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DHISLocalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DHISLocalServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,7 +678,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" />
+        <state line="8" column="22" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
@@ -649,47 +699,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/CustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="8" column="52" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" />
+        <state line="17" column="26" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
@@ -713,6 +732,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/CustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/controller/LocalServerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="39" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
@@ -722,10 +748,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="13" selection-start="5167" selection-end="5167" vertical-scroll-proportion="0.33288947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/databaseHandler/BasicCustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="16" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#getCustomers#0;class#Customer#0" expanded="false" />
+            <element signature="method#getName#0;class#Customer#0" expanded="false" />
+            <element signature="method#getDob#0;class#Customer#0" expanded="false" />
+            <element signature="method#getGender#0;class#Customer#0" expanded="false" />
+            <element signature="method#getAddress#0;class#Customer#0" expanded="false" />
+            <element signature="method#getVisitedDay#0;class#Customer#0" expanded="false" />
+            <element signature="method#getiCDCode#0;class#Customer#0" expanded="false" />
+            <element signature="method#getAdditionalICDCode#0;class#Customer#0" expanded="false" />
+            <element signature="method#getDateOfDischarge#0;class#Customer#0" expanded="false" />
+            <element signature="method#getOutcome#0;class#Customer#0" expanded="false" />
+            <element signature="method#getTypeOfTreatment#0;class#Customer#0" expanded="false" />
+            <element signature="method#getServices#0;class#Customer#0" expanded="false" />
+            <element signature="method#getDrugs#0;class#Customer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Drug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/model/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="85" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vn/edu/rmit/common/utility/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="66" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.60585886">
-          <folding />
+        <state line="94" column="0" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.8650138">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#dateChecker#0;class#FileHandler#0" expanded="false" />
+            <element signature="method#setCustomer#0;class#FileHandler#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

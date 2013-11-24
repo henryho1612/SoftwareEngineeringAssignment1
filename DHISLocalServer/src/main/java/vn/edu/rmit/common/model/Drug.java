@@ -13,27 +13,28 @@ public class Drug {
     int quantity;
     int length;
 
-    public String getName() {
-        return name;
+    public Drug (String name, int quantity, int length)
+    {
+        this.name = name;
+        this.quantity = quantity;
+        this.length = length;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     public int getLength() {
         return length;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    @Override
+    public String toString()
+    {
+        return name + "-" + quantity + "-" + length;
     }
 }
