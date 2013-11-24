@@ -29,40 +29,40 @@ public class FileHandler {
             jsonObject = (JSONObject) nObject;
 
             String name = (String) jsonObject.get("Name");
-//            System.out.println(name);
+            System.out.println(name);
             String dob = (String) jsonObject.get("DOB");
-//            System.out.println(dob);
+            System.out.println(dob);
             String gender = (String) jsonObject.get("Gender");
-//            System.out.println(gender);
+            System.out.println(gender);
             String address = (String) jsonObject.get("Address");
-//            System.out.println(address);
+            System.out.println(address);
             String dateOfVisit = (String) jsonObject.get("DateOfVisit");
-//            System.out.println(dateOfVisit);
+            System.out.println(dateOfVisit);
             String icdCode = (String) jsonObject.get("ICDCode");
-//            System.out.println(icdCode);
+            System.out.println(icdCode);
             String additionalICDCode = (String) jsonObject.get("AdditionalICDCode");
-//            System.out.println(additionalICDCode);
+            System.out.println(additionalICDCode);
             String dateOfDischarge = (String) jsonObject.get("DateOfDischarge");
-//            System.out.println(dateOfDischarge);
+            System.out.println(dateOfDischarge);
             String outcome = (String) jsonObject.get("Outcome");
-//            System.out.println(outcome);
+            System.out.println(outcome);
             String typeOfTreatment = (String) jsonObject.get("TypeOfTreatment");
-//            System.out.println(typeOfTreatment);
+            System.out.println(typeOfTreatment);
 
             jsonArray = (JSONArray)jsonObject.get("ListOfServices");
             for (int i = 0; i < jsonArray.size(); i++)
             {
                 nObject = parser.parse(jsonArray.get(i).toString());
                 JSONObject jObject = (JSONObject) nObject;
-//                System.out.println("--------"+i+"--------");
+                System.out.println("--------"+i+"--------");
                 String labTest = (String) jObject.get("LabTest");
-//                System.out.println(labTest);
+                System.out.println(labTest);
                 String imageDiagnosis = (String) jObject.get("ImageDiagnosis");
-//                System.out.println(imageDiagnosis);
+                System.out.println(imageDiagnosis);
                 String surgery = (String) jObject.get("Surgery");
-//                System.out.println(surgery);
+                System.out.println(surgery);
                 String mirrorSurgery = (String) jObject.get("MirrorSurgery");
-//                System.out.println(mirrorSurgery);
+                System.out.println(mirrorSurgery);
             }
 
             jsonArray = (JSONArray)jsonObject.get("ListOfDrug");
@@ -70,13 +70,13 @@ public class FileHandler {
             {
                 nObject = parser.parse(jsonArray.get(i).toString());
                 JSONObject jObject = (JSONObject) nObject;
-//                System.out.println("D--------"+i+"--------");
+                System.out.println("D--------"+i+"--------");
                 String drugName = (String) jObject.get("DrugName");
-//                System.out.println(drugName);
+                System.out.println(drugName);
                 int quality = Integer.parseInt(jObject.get("Quality").toString());
-//                System.out.println(quality);
+                System.out.println(quality);
                 int length = Integer.parseInt(jObject.get("Length").toString());
-//                System.out.println(length);
+                System.out.println(length);
             }
 
         } catch (ParseException parseException) {
