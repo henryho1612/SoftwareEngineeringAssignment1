@@ -14,7 +14,7 @@ import Http.HttpConnection;
  */
 public class Main {
 
-    static final String url = "http://localhost:8080/Tute1-HelloWorld/welcome.htm";
+    static final String url = "http://localhost:8080/DHISLocalServer/welcome.htm";
 
     public static void main(String[] args) {
         
