@@ -1,33 +1,3 @@
-[{
-	"Name":"Nguyen Van A",
-	"DOB":"30/12/2013",
-	"Gender":"Male",
-	"Address":"21 Nguyen Lam",
-	"DateOfVisit":"21/12/2013",
-	"ICDCode":"001",
-	"AdditionalICDCode":"004",
-	"DateOfDischarge":"25/12/2013",
-	"Outcome":"Cured",
-	"TypeOfTreatment":"Died",
-	"ListOfServices":[
-		{	"LabTest":"neck", 
-			"ImageDiagnosis":"Phimosis",
-			"Surgery":"Circumsion",
-			"MirrorSurgery":"Repair" },
-		{	"LabTest":"knee", 
-			"ImageDiagnosis":"Religious reason",
-			"Surgery":"Urethroplasty",
-			"MirrorSurgery":"Chordae Correction" },
-	],
-	"ListOfDrug":[
-		{	"DrugName":"Panadol", 
-			"Quality":30,
-			"Length":10 },
-		{	"DrugName":"Phamaton", 
-			"Quality":30,
-			"Length":10 },
-	]
-},
 {
 	"Name":"Nguyen Van A",
 	"DOB":"30/12/2013",
@@ -57,4 +27,4 @@
 			"Quality":30,
 			"Length":10 },
 	]
-}]
+}

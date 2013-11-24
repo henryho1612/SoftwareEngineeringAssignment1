@@ -6,6 +6,7 @@ import vn.edu.rmit.common.model.Customer;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -58,5 +59,34 @@ public class BasicCustomerDAO implements CustomerDAO {
                 } catch (SQLException e) {}
             }
         }
+    }
+
+    @Override
+    public int findMaxPrimaryKey() {
+        int key = 0;
+        String queryCommand = "SELECT MAX(idCustomer) as idCustomer FROM Customer";
+
+        Connection conn = null;
+        try {
+            conn = dataSource.getConnection();
+            PreparedStatement ps = conn.prepareStatement(queryCommand);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                key = rs.getInt("idCustomer");
+            }
+            rs.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {}
+            }
+        }
+        return key;
     }
 }

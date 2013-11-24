@@ -66,8 +66,4 @@ public class HttpConnection {
         }
         
     }
-
-    public void receivedPostRequest() {
-
-    }
 }

@@ -13,4 +13,6 @@ public interface DrugDAO {
 
     public void insert(Drug drug);
 
+    public int findMaxPrimaryKey();
+
 }

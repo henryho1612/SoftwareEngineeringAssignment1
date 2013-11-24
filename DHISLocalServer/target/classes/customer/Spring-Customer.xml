@@ -15,4 +15,12 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="customerDrugDAO" class="vn.edu.rmit.common.databaseHandler.BasicCustomerDrugDAO">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="customerServiceDAO" class="vn.edu.rmit.common.databaseHandler.BasicCustomerServiceDAO">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
 </beans>
