@@ -55,48 +55,6 @@ public class HttpConnection {
             
             System.out.println("responseBody : " + responseBody);
 
-            // <editor-fold defaultstate="collapsed" desc=" ${Testing Code} ">
-//            StringEntity entity = new StringEntity(
-//                    "<DocSearch><searchString>*.pdf</searchString>"
-//                    + "<userName>Sudhakar KV</userName></DocSearch>",
-//                    "text/xml", "ISO-8859-1");
-//            post.addHeader("Accept", "text/xml");
-//            post.setEntity(entity);
-//            post.addHeader("Content-Type", "text/xml");
-            //post.setEntity(new StringEntity(data));
-            //HttpResponse response = conn.execute(post);
-//            StringEntity entity = new StringEntity(
-//                    "<DocSearch><searchString>*.pdf</searchString>"
-//                    + "<userName>Sudhakar KV</userName></DocSearch>",
-//                    "text/xml", "ISO-8859-1");
-//            post.addHeader("Accept", "text/xml");
-//            post.setEntity(entity);
-            
-            //StatusLine status = response.getStatusLine();
-            //System.out.println(status.getStatusCode());
-            //System.out.println("\nSending 'POST' request to URL : " + url.toString());
-            //System.out.println("Post parameters : " + urlParameters);
-            //HttpEntity entity = response.getEntity();
-            //BufferedReader in = new BufferedReader(
-                    //new InputStreamReader(entity.getContent()));
-            //String inputLine;
-            //StringBuffer responses = new StringBuffer();
-
-            //while ((inputLine = in.readLine()) != null) {
-                //responses.append(inputLine);
-            //}
-            //in.close();
-            //print result
-            //System.out.println(responses.toString());
-            //httpPost.addHeader( "Authorization", bs.getValue() );
-            //httpPost.addHeader( "Content-Type", "application/xml" );
-            //httpPost.addHeader( "Accept", "application/xml" );
-
-            //httpPost.setEntity( new StringEntity( xmlReport.toString() ) );
-            //HttpResponse response = httpclient.execute( targetHost, httpPost, localcontext );
-            //HttpEntity entity = response.getEntity();
-            // </editor-fold>
-            
         } catch (MalformedURLException ioe) {
             System.out.println("Invalid");
         } catch (UnsupportedEncodingException ex) {
@@ -107,18 +65,6 @@ public class HttpConnection {
             post.releaseConnection();
         }
         
-        // <editor-fold defaultstate="collapsed" desc=" ${Another way of open a connection} ">
-//        String servlet = url.toString();
-//        String query = "act=1&id=350";
-//        java.net.URL urli = new java.net.URL(servlet);
-//        HttpURLConnection conn = (HttpURLConnection) urli.openConnection();
-//        conn.setRequestMethod("POST");
-//        conn.setDoOutput(true);
-//        conn.setRequestProperty("Content-Length", "sdfsdf");
-////        conn.getOutputStream().write(query.getBytes(charEncoding));
-//        conn.connect();
-//        conn.disconnect();
-        // </editor-fold>
     }
 
     public void receivedPostRequest() {

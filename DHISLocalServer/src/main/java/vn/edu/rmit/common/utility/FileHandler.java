@@ -3,6 +3,11 @@ package vn.edu.rmit.common.utility;
 import org.json.simple.parser.*;
 import org.json.simple.*;
 import org.json.simple.parser.ParseException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import vn.edu.rmit.common.databaseHandlerInterface.CustomerDAO;
+import vn.edu.rmit.common.databaseHandlerInterface.DrugDAO;
+import vn.edu.rmit.common.databaseHandlerInterface.ServiceDAO;
 import vn.edu.rmit.common.model.Customer;
 import vn.edu.rmit.common.model.Drug;
 import vn.edu.rmit.common.model.Service;
@@ -119,6 +124,7 @@ public class FileHandler {
             String surgery = (String) jObject.get("Surgery");
             String mirrorSurgery = (String) jObject.get("MirrorSurgery");
             services.add(new Service(labTest, imageDiagnosis, surgery, mirrorSurgery));
+            insertServiceInDatabase(services.get(i));
         }
 
         List<Drug> drugs = new ArrayList<>();
@@ -130,13 +136,39 @@ public class FileHandler {
             int quality = Integer.parseInt(jObject.get("Quality").toString());
             int length = Integer.parseInt(jObject.get("Length").toString());
             drugs.add(new Drug(drugName, quality, length));
+            insertDrugInDatabase(drugs.get(i));
         }
 
         if (dob != null && dateOfDischarge != null && dateOfVisit != null)
         {
             Customer newCustomer = new Customer(name, dob, gender, address, dateOfVisit, icdCode, additionalICDCode, dateOfDischarge, outcome, typeOfTreatment, services, drugs);
             customer.getCustomers().add(newCustomer);
+            insertCustomerInDatabase(newCustomer);
 //            System.out.println(customer.getCustomers().get(0).toString());
         }
+    }
+
+    private void insertCustomerInDatabase(Customer newCustomer)
+    {
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("Spring-Module.xml");
+        CustomerDAO customerDAO = (CustomerDAO) context.getBean("customerDAO");
+        customerDAO.insert(newCustomer);
+    }
+
+    private void insertDrugInDatabase(Drug newDrug)
+    {
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("Spring-Module.xml");
+        DrugDAO drugDAO = (DrugDAO) context.getBean("drugDAO");
+        drugDAO.insert(newDrug);
+    }
+
+    private void insertServiceInDatabase(Service newService)
+    {
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("Spring-Module.xml");
+        ServiceDAO serviceDAO = (ServiceDAO) context.getBean("serviceDAO");
+        serviceDAO.insert(newService);
     }
 }

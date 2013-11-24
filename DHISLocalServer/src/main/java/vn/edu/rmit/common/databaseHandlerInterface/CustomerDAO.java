@@ -1,4 +1,4 @@
-package vn.edu.rmit.common.databaseHandler;
+package vn.edu.rmit.common.databaseHandlerInterface;
 import vn.edu.rmit.common.model.Customer;
 
 /**
@@ -11,6 +11,6 @@ import vn.edu.rmit.common.model.Customer;
 public interface CustomerDAO {
 
     public void insert(Customer customer);
-    public Customer findCustomerById(int id);
+//    public Customer findCustomerById(int id);
 
 }

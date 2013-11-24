@@ -1,7 +1,8 @@
 package vn.edu.rmit.common.databaseHandler;
 
-import vn.edu.rmit.common.databaseHandlerInterface.CustomerDAO;
+import vn.edu.rmit.common.databaseHandlerInterface.DrugDAO;
 import vn.edu.rmit.common.model.Customer;
+import vn.edu.rmit.common.model.Drug;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,11 +12,11 @@ import java.sql.SQLException;
 /**
  * Created with IntelliJ IDEA.
  * User: apple
- * Date: 11ß/24/13
- * Time: 11:32 AM
+ * Date: 11/24/13
+ * Time: 6:57 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BasicCustomerDAO implements CustomerDAO {
+public class BasicDrugDAO implements DrugDAO{
 
     private DataSource dataSource;
 
@@ -24,26 +25,19 @@ public class BasicCustomerDAO implements CustomerDAO {
     }
 
     //source: http://www.mkyong.com/spring/maven-spring-jdbc-example/
-    public void insert(Customer customer)
+    public void insert(Drug drug)
     {
-        String insertCommand = "INSERT INTO Customer " +
-                "(name, dob, gender, address, dateOfVisit, icdCode, additionalIcdCode, dateOfDischarge, outcome, typeOfTreatment) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        String insertCommand = "INSERT INTO Drug " +
+                "(name, quantity, length) VALUES (?,?,?)";
 
         Connection conn = null;
         try {
             conn = dataSource.getConnection();
             PreparedStatement ps = conn.prepareStatement(insertCommand);
 
-            ps.setString(1, customer.getName());
-            ps.setString(2, customer.getDob());
-            ps.setInt(3, customer.getGender());
-            ps.setString(4, customer.getAddress());
-            ps.setString(5, customer.getVisitedDay());
-            ps.setString(6, customer.getiCDCode());
-            ps.setString(7, customer.getAdditionalICDCode());
-            ps.setString(8, customer.getDateOfDischarge());
-            ps.setString(9, customer.getOutcome());
-            ps.setString(10, customer.getTypeOfTreatment());
+            ps.setString(1, drug.getName());
+            ps.setInt(2, drug.getQuantity());
+            ps.setInt(3, drug.getLength());
 
             ps.executeUpdate();
             ps.close();
@@ -59,4 +53,5 @@ public class BasicCustomerDAO implements CustomerDAO {
             }
         }
     }
+
 }
